@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Placebo+</title>
+  <style>
+    /* CSS styles for the website */
+    #app {
+      font-family: Arial, sans-serif;
+    }
+    
+    body {
+      background-color: #99D9D9;
+    }
+    
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #99D9D9;
+      color: #fff;
+      padding: 10px;
+    }
+    
+    .navbar-logo {
+      font-weight: bold;
+      font-size: 24px;
+    }
+    
+    .navbar-links {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .navbar-links a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #349999; /* Updated color */
+      min-width: 160px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: #000;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    .background-box {
+      background-color: #6FB4B6;
+      padding: 10px;
+      margin-bottom: 10px;
+      color: #fff;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+    }
+    
+    
+    .background-box:hover {
+      background-color: #74c8c8; 
+      box-shadow: 2px 2.5px #237171; 
+      transform: scale(1.03); 
+    }
+    
+    .header {
+  font-size: 75px;
+  font-family: 'Questrial', sans-serif;
+  color: #fff;
+  position: absolute;
+  top: 37.5%;
+  left: 15%;
+  transform: translate(-25%, -50%);
+}
+
+  .h2{
+  font-size: 20px;
+  font-family: 'Questrial', sans-serif;
+  color: #fff;
+  position: absolute;
+  top: 55%;
+  left: 13%;
+  transform: translate(-25%, -50%)
+  }
+
+ .services{
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  top: 85%;
+  right: 30%;
+  transform: translate(-25%, -50%)
+
+ }
+
+
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <div class="navbar">
+      <div class="navbar-logo">Placebo+</div>
+      <div class="navbar-links">
+        <div class="background-box">
+          <a href="#">Home</a>
+        </div>
+        <div class="dropdown">
+          <div class="background-box">
+            <a href="#">Register</a>
+          </div>
+          <div class="dropdown-content">
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+          </div>
+        </div>
+        <div class="background-box">
+          <a href="#">About</a>
+        </div>
+        <div class="background-box">
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+
+   
+    
+    <div class="header">
+      PLACEBO+
+    </div>
+    
+    <!-- Rest of the website content -->
+  </div>
+ 
+  <div class="h2">
+    Get and store all the details now!
+  </div>
+
+  <div class="services">
+      OUR SERVICES
+    </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {},
+      methods
+
