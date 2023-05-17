@@ -21,6 +21,7 @@
       background-color: #99D9D9;
       color: #fff;
       padding: 10px;
+      
     }
     
     .navbar-logo {
@@ -114,12 +115,12 @@
  }
 
  .he{
-  font-size: medium;
+  font-size: 50px;
   color: rgb(94, 186, 196);
-  font-family: 'Questrial', sans-serif;
+  font-family: Impact, Haettenschweiler, Arial, Helvetica, sans-serif;
   position: absolute;
   top: 10%;
-  left: 5%;
+  left: 42%;
   transform: translate(-25%, -50%)
  }
 
@@ -128,34 +129,72 @@
   color: #6FB4B6;
   font-family: 'Questrial',sans-serif;
   position: absolute;
-  top: 15%;
+  top: 17%;
   left: 28%;
+ }
+
+ .doc2 {
+  font-size: 30px;
+  color: #000;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  top: 40%;
+  left:10% ;
+ }
+
+ .mod {
+  font-size: 70px;
+  color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  top: 17%;
+  left: 27.5%;
+ }
+
+ 
+
+ .bu2 {
+  position: absolute;
+  top: 70%;
+  left: 43%;
+  
  }
 
  .spart{
   position: absolute;
-  bottom: -110%;
-  height: 750px;
+  bottom: -95%;
+  height: 650px;
   width: 1300px;
   background-color: #fff;
   left: 6%;
   border-radius: 20px;
   background: #f7f4f4;
-  box-shadow: 15px 15px 30px #bebebe,
-               -15px -15px -30px #ffffff;
+   box-shadow: -50px 60px 60px rgba(0, 0, 0, 0.280);
+              
  }
 
  .tpart {
   position: absolute;
-  bottom: -230%;
+  bottom: -200%;
   left: 6%;
-  height: 750px;
+  height: 650px;
   width: 1300px;
-  
-  
-  
+  border-radius: 20px;
+  box-shadow: -50px 100px 100px rgba(0, 0, 0, 0.280);
+   }
 
- }
+  .forthpart {
+    position: absolute;
+  bottom: -310%;
+  height: 650px;
+  width: 1300px;
+  background-color: #149b97;
+  left: 6%;
+  border-radius: 20px;
+  background: #2ac0ce;
+   box-shadow: -50px 60px 60px rgba(0, 0, 0, 0.280);             
+    
+  }
 
  button {
   border-style: none;
@@ -258,7 +297,6 @@ button:active {
   transform: rotateY(0.5turn);
 }
 
-.front,
 .back {
   position: absolute;
   top: 0;
@@ -346,11 +384,42 @@ button:active {
 .rounded {
   position: absolute;
   bottom: 10%;
-  right: 2%;
-
+  right: 4%;
+  box-shadow: -15px 25px 25px rgba(0, 0, 0, 0.280);
 }
 
+.img2{
+  border-radius: 25px;
+  box-shadow: -50px 60px 60px rgba(0, 0, 0, 0.280); 
+}
 
+.button2 {
+ padding: 17px 40px;
+ border-radius: 50px;
+ border: 0;
+ background-color: rgb(87, 163, 186);
+ box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+ letter-spacing: 1.5px;
+ text-transform: uppercase;
+ font-size: 15px;
+ transition: all .5s ease;
+}
+
+.button2:hover {
+ letter-spacing: 3px;
+ background-color: hsl(201, 80%, 48%);
+ color: hsl(195, 43%, 69%);
+ box-shadow: rgb(35, 185, 215) 0px 7px 29px 0px;
+}
+
+.button2:active {
+ letter-spacing: 3px;
+ background-color: hsl(196, 80%, 48%);
+ color: hsl(195, 38%, 70%);
+ box-shadow: rgb(24, 178, 220) 0px 0px 0px 0px;
+ transform: translateY(10px);
+ transition: 100ms;
+}
 
 
 
@@ -394,35 +463,32 @@ button:active {
         </div>
       </div>
     </div>
-    
+  </div> 
    
-    <div class="fpart height-50">
+    <div class="fpart ">
       <div class="header">
-       PLACEBO+
+        PLACEBO+
       </div> 
-    
-    
-    
-      <!-- Rest of the website content -->
-      </div>
+       <!-- Rest of the website content -->
+      
 
 
        <img src="hos.jpeg" class="rounded" position="absolute" width="750" height="500">
   
  
-    <div class="h2">
-    Get and store all the details now!
-       
+      <div class="h2">
+        Get and store all the details now!
+       </div>
+    <div class="bu">
+        <button>
+           Book Appointment
+        </button>
      </div>
-     <div class="bu">
-     <button>
-      Book Appointment
-     </button>
-     </div>
-  </div>
+    </div>
+  
     <div class="spart">
       <div class="he">
-        <h2> OUR SERVICES</h2>  
+         OUR SERVICES
       </div>
        <div class="carr">
         <div class="card1">
@@ -471,10 +537,25 @@ button:active {
      </div>
 
      <div class="tpart">
-      <img src="pha.jpg" class="img2" position="absolute" width="1300" height="750">
+       <img src="pha.jpg" class="img2" position="absolute" width="1300" height="700">
         <div class="doc">
           Commited To You
         </div>
+        <div class="doc2">
+          East Forge Medical is the region's most trusted provider of women's healthcare. We have a highly trained team of medical experts, advanced facilities, and unwavering commitment to the welfare of our patients.
+        </div>
+        <div class="bu2">
+          <div class="button2"> 
+              Learn More
+          </div>
+        </div>
+     </div>
+
+     <div class="forthpart" height="700" width="1300">
+       <div class="mod">
+        Meet Our Doctors
+       </div>
+       
      </div>
 
   
