@@ -24,6 +24,8 @@
     }
     
     .navbar-logo {
+      position: absolute;
+      left: 10%;
       font-weight: bold;
       font-size: 34px;
     }
@@ -82,7 +84,7 @@
     }
     
     .header {
-  font-size: 100px;
+  font-size: 120px;
   font-family: 'Questrial', sans-serif;
   color: #fff;
   position: absolute;
@@ -97,7 +99,7 @@
   color: #080808;
   position: absolute;
   top: 55%;
-  left: 13%;
+  left: 15%;
   transform: translate(-25%, -50%)
   }
 
@@ -124,11 +126,242 @@
  .spart{
   position: absolute;
   bottom: -90%;
-  height: 700px;
-  width: 1600px;
+  height: 600px;
+  width: 1300px;
   background-color: #fff;
+  left: 6%;
+  border-radius: 30px;
+  background: #f7f4f4;
+  box-shadow: 15px 15px 30px #bebebe,
+               -15px -15px -30px #ffffff;
+
+
+  
+
 
  }
+
+ button {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(8, 134, 202);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  background: rgb(6, 153, 207);
+  box-shadow: 0 0 30px 5px rgba(6, 153, 206, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+.bu{
+  position: absolute;
+  top: 70%;
+  left: 17.8%;
+  transform: translate(-25%, -50%)
+
+}
+
+.card1 {
+  width: 12rem;
+  cursor: pointer;
+}
+
+.content {
+  text-align: center;
+  position: relative;
+  transition: all 2.25s;
+  background-color: rgb(127, 204, 240);
+  padding: 5em;
+  transform-style: preserve-3d;
+}
+
+.card1:hover .content {
+  transform: rotateY(0.5turn);
+}
+
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 2em;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.title {
+  transform: translateZ(5rem);
+  font-size: 2rem;
+}
+
+.subtitle {
+  transform: translateZ(2rem);
+}
+
+.back {
+  transform: rotateY(0.5turn);
+  background-color: #009bff;
+}
+
+.description {
+  transform: translateZ(3rem);
+}
+
+.card1 {
+  width: 290px;
+  height: 260px;
+  padding: 0.5rem;
+  background: rgba(198, 198, 198, 0.34);
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.440);
+  border-left: 2px  rgba(255, 255, 255, 0.545) outset;
+  box-shadow: -40px 50px 30px rgba(0, 0, 0, 0.280);
+  transform: skewX(10deg);
+  transition: .4s;
+  overflow: hidden;
+  color: white;
+}
+
+.card1:hover {
+  height: 390px;
+  transform: skew(0deg);
+}
+
+.align {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-self: flex-start;
+}
+
+.red {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ff605c;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+}
+
+.yellow {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffbd44;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+}
+
+.green {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #00ca4e;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.280);
+}
+
+.card1 h1 {
+  text-align: center;
+  margin: 1.3rem;
+  color: rgb(218, 244, 237);
+  text-shadow: -10px 5px 10px rgba(0, 0, 0, 0.573);
+}
+
+.carr {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+.carr2 {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+}
+
+.carr1 {
+  position: absolute;
+  top: 25%;
+  left: 38.57%;
+}
+
+.rounded {
+  position: absolute;
+  bottom: 10%;
+  right: 2%;
+
+}
+
+
+
+
+
+
+
+
+ 
 
  
 
@@ -140,7 +373,7 @@
   
   <div id="app">
     <div class="navbar">
-      <img src="logo.png" class="img-thumbnail" alt="." width="100" height="100">
+      <img src="logo.png" class="img-thumbnail" alt="." width="120" height="120">
       <div class="navbar-logo">Placebo+</div>
       
 
@@ -178,17 +411,70 @@
       </div>
 
 
-       <img src="hos.jpeg" class="rounded float-end" alt="." width="700" height="500">
+       <img src="hos.jpeg" class="rounded" position="absolute" width="750" height="500">
   
  
     <div class="h2">
     Get and store all the details now!
+       
+     </div>
+     <div class="bu">
+     <button>
+      Book Appointment
+     </button>
      </div>
   </div>
     <div class="spart">
       <div class="he">
    <h2> OUR SERVICES</h2>
+
+   
       </div>
+      <div class="carr">
+      <div class="card1">
+        <div class="align">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+        </div>
+    
+        <h1>HOVER ME</h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde explicabo enim rem odio assumenda?
+        </p>
+    </div>
+    </div>
+
+    <div class="carr2">
+      <div class="card1">
+        <div class="align">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+        </div>
+    
+        <h1>HOVER ME</h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde explicabo enim rem odio assumenda?
+        </p>
+    </div>
+    </div>
+
+    <div class="carr1">
+      <div class="card1">
+        <div class="align">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+        </div>
+    
+        <h1>HOVER ME</h1>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde explicabo enim rem odio assumenda?
+        </p>
+    </div>
+    </div>
+
      </div>
 
   
