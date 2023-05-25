@@ -1,0 +1,89 @@
+
+
+ img{
+   padding-top: 18px;
+   float:left;
+ }
+
+.name{
+  color: white;
+  padding-top: 0px;
+  font-size:36px;
+}
+
+
+ .welcome{
+   text-align: center;
+   color: #033232;
+   font-size: 40px;
+ }
+
+ .welcome2{
+   text-align: center;
+   color: #033232;
+   font-size: 25px;
+ }
+
+.log{
+  padding-top: 15px;
+}
+
+.username{
+  width: 80%;
+  height: 25px;
+  font-size: 15px;
+  background-color: white;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  border-color: transparent;
+  border-radius: 1rem;
+}
+
+.password{
+  width: 80%;
+  height: 25px;
+  font-size: 15px;
+  background-color: white;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-color: transparent;
+  border-radius: 1rem;
+}
+
+.remember-me{
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.p1{
+  font-size: 14px;
+  color: #a6a6a6;
+  margin-top: 0px;
+}
+
+#btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 20px;
+  background: #8ec8c8;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-left: 40%;
+}
+
+#btn:hover {
+  background: #4f9699;
+  text-decoration: none;
+}
+
+#altr{
+  color: #a6a6a6;
+  font-size: 13px;
+  margin-left: 26%;
+  padding-top: 10px;
+}
